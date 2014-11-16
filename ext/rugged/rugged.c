@@ -54,7 +54,7 @@ static const char *RUGGED_ERROR_NAMES[] = {
 
 #define RUGGED_ERROR_COUNT (int)((sizeof(RUGGED_ERROR_NAMES)/sizeof(RUGGED_ERROR_NAMES[0])))
 
-VALUE rb_mRugged;
+extern VALUE rb_mRugged;
 VALUE rb_eRuggedError;
 
 static VALUE rb_eRuggedErrors[RUGGED_ERROR_COUNT];
