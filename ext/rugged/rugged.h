@@ -44,6 +44,41 @@
 #define rb_str_new_utf8(str) rb_enc_str_new(str, strlen(str), rb_utf8_encoding())
 #define CSTR2SYM(s) (ID2SYM(rb_intern((s))))
 
+extern VALUE rb_mRugged;
+extern VALUE rb_eRuggedError;
+extern VALUE rb_cRuggedBlame;
+extern VALUE rb_cRuggedBlob;
+extern VALUE rb_cRuggedBlobSig;
+extern VALUE rb_cRuggedBranch;
+extern VALUE rb_cRuggedBranchCollection;
+extern VALUE rb_cRuggedCommit;
+extern VALUE rb_cRuggedConfig;
+extern VALUE rb_mRuggedCred;
+extern VALUE rb_cRuggedCredUserPassword;
+extern VALUE rb_cRuggedCredSshKey;
+extern VALUE rb_cRuggedCredSshKeyFromAgent;
+extern VALUE rb_cRuggedCredDefault;
+extern VALUE rb_cRuggedDiff;
+extern VALUE rb_cRuggedDiffDelta;
+extern VALUE rb_cRuggedDiffHunk;
+extern VALUE rb_cRuggedDiffLine;
+extern VALUE rb_cRuggedIndex;
+extern VALUE rb_cRuggedObject;
+extern VALUE rb_cRuggedPatch;
+extern VALUE rb_cRuggedReference;
+extern VALUE rb_cRuggedReferenceCollection;
+extern VALUE rb_cRuggedRemote;
+extern VALUE rb_cRuggedRemoteCollection;
+extern VALUE rb_cRuggedOdbObject;
+extern VALUE rb_cRuggedWalker;
+extern VALUE rb_cRuggedSubmodule;
+extern VALUE rb_cRuggedSubmoduleCollection;
+extern VALUE rb_cRuggedTag;
+extern VALUE rb_cRuggedTagAnnotation;
+extern VALUE rb_cRuggedTagCollection;
+extern VALUE rb_cRuggedTree;
+extern VALUE rb_cRuggedTreeBuilder;
+
 /*
  * Initialization functions
  */

@@ -24,7 +24,7 @@
 
 #include "rugged.h"
 
-const char *RUGGED_ERROR_NAMES[] = {
+static const char *RUGGED_ERROR_NAMES[] = {
 	"None",            /* GITERR_NONE */
 	"NoMemError",      /* GITERR_NOMEMORY, */
 	"OSError",         /* GITERR_OS, */
@@ -56,8 +56,8 @@ const char *RUGGED_ERROR_NAMES[] = {
 
 VALUE rb_mRugged;
 VALUE rb_eRuggedError;
-VALUE rb_eRuggedErrors[RUGGED_ERROR_COUNT];
 
+static VALUE rb_eRuggedErrors[RUGGED_ERROR_COUNT];
 static VALUE rb_mShutdownHook;
 
 /*
