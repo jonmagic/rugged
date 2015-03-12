@@ -63,7 +63,7 @@ else
     Dir.mkdir("build") if !Dir.exists?("build")
 
     Dir.chdir("build") do
-      sys("cmake .. -DBUILD_CLAR=OFF -DTHREADSAFE=ON -DBUILD_SHARED_LIBS=OFF -DCMAKE_C_FLAGS=-fPIC -DCMAKE_BUILD_TYPE=RelWithDebInfo -G \"Unix Makefiles\"")
+      sys("cmake .. -DBUILD_CLAR=OFF -DTHREADSAFE=ON -DBUILD_SHARED_LIBS=OFF -DCMAKE_C_FLAGS=-fPIC -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_PREFIX_PATH=/opt/boxen/homebrew/opt/libssh2 -G \"Unix Makefiles\"")
       sys(MAKE)
 
       pcfile = File.join(LIBGIT2_DIR, "build", "libgit2.pc")
